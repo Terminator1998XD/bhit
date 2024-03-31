@@ -2,7 +2,7 @@ const orentations = {vertical: 0, horizontal: 1};
 const platforms = {yandex: 0, vkplay: 1};
 
 const myOrentation = orentations.vertical;
-const platform = platforms.yandex;
+const platform = platforms.vkplay;
 const gameViewport = [900,1600];
 
 const mainLoader = new GameLoader();
