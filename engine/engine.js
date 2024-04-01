@@ -61,7 +61,7 @@ window.addEventListener('touchmove', function(event) {
 });
 
 window.addEventListener('touchstart', function(event) {
-  event.preventDefault();
+  if(!OnPause) event.preventDefault();
   AnyTouchDown = true;
   AnyTouchUp = false;
   const rect = canvas.getBoundingClientRect();
@@ -76,7 +76,7 @@ window.addEventListener('mouseup', function(event) {
 });
 
 window.addEventListener('touchend', function(event) {
-  event.preventDefault();
+  if(!OnPause) event.preventDefault();
   AnyTouchDown = false;
   AnyTouchUp = true;
 });
